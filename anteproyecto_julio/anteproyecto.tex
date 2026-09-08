@@ -1,0 +1,110 @@
+\documentclass[final,12p]{article}
+\usepackage{graphicx}
+\usepackage[letterpaper,margin=1.0in]{geometry}
+\usepackage{amssymb}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage[utf8]{inputenc} 
+\usepackage{lastpage}
+
+
+\def\Student{Julio C\'{e}sar Borb\'{o}n Fragoso}
+\def\Title{ANTEPROYECTO}
+\def\Prog{Doctorado en Ciencias (F\'{i}sica) }
+\def\Dept{Departamento de Investigac\'{i}on en Fis\'{i}ca}
+\def\Institution{Universidad de Sonora}
+\def\Director{}
+\def\ProjectTitle{}
+\def\ResearchLine{Experimental Particle Physics}
+
+%%header and footer
+\lhead{\Student\ / \Prog}
+\rhead{\Title}
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+
+%%%%%%%comands
+\newcommand{\SubItem}[1]{ {\setlength\itemindent{15pt} \item[-] #1} }
+\newcommand{\lumi}[1]{{#1~fb$^{-1}$}}
+\newcommand{\instlumi}[1]{#1$\times 10^{34}$ cm$^{-2}$s$^{-1}$}
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\onehalfspacing
+
+%%%%Title Page
+\begin{titlepage}
+\centering
+\hspace{0pt}
+\vfill
+{\scshape\Large \Title \par}
+%project revised 2023-2
+  
+  \vspace{2cm}
+  {
+    TITLE:\par
+    {\bf \large \ProjectTitle \par}
+  }
+       
+  \vspace{0.5cm}
+  {
+    RESEARCH LINE: \par
+    \ResearchLine \par
+  }
+        
+  \vspace{4cm}
+  {\underline{\hspace{8cm}}\par}
+  {\bf \scshape \Student \par}
+  {Student\par}
+
+  \vspace{1cm}
+  {\underline{\hspace{8cm}}\par}
+  {\scshape \Director \par}
+  {Director\par}
+
+  \vspace{1cm}
+  {\bf \Prog \par}
+  {\Dept \par}
+  {\Institution \par}
+
+  \vspace{4cm}
+  {\today}
+
+\hspace{0pt}
+\vfill
+
+\end{titlepage}
+
+
+%%%%% white page for print out
+\shipout\null
+
+
+%%%% Abstract Page
+\newpage
+\hspace{2pt}
+\vfill
+
+  \begin{center}
+    {\Large \ProjectTitle \par}
+    \vspace{1cm}
+    {\itshape\textbf{Abstract}\par}
+  \end{center}
+  
+  \vspace{0.5cm}
+   
+This research 
+
+  \hspace{2pt}
+\vfill
+
+\end{document}
