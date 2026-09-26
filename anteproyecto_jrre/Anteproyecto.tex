@@ -1,0 +1,159 @@
+\documentclass[final,12p]{article}
+\usepackage{graphicx}
+\usepackage[letterpaper,margin=1.0in]{geometry}
+\usepackage{amssymb}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage[utf8]{inputenc} 
+\usepackage{lastpage}
+
+\def\Student{Jos\'{e} Roberto Rasc\'{o}n Enr\'{i}quez}
+\def\Title{ANTEPROYECTO}
+\def\Prog{Doctorado en Ciencias (F\'{i}sica) }
+\def\Dept{Departamento de Investigaci\'{o}n en F\'{i}sica}
+\def\Institution{Universidad de Sonora}
+\def\Director{Dr. Le\'on Manuel Garc\'ia de la Vega}
+\def\ProjectTitle{Por definir}
+\def\ResearchLine{F\'isica de part\'iculas}
+
+%%header and footer
+\lhead{\Student\ / \Prog}
+\rhead{\Title}
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+
+%%%%%%%comands
+\newcommand{\SubItem}[1]{ {\setlength\itemindent{15pt} \item[-] #1} }
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\onehalfspacing
+
+%%%%Title Page
+\begin{titlepage}
+\centering
+\hspace{0pt}
+\vfill
+{\scshape\Large \Title \par}
+%project revised 2023-2
+  
+  \vspace{2cm}
+  {
+    TITLE:\par
+    {\bf \large \ProjectTitle \par}
+  }
+       
+  \vspace{0.5cm}
+  {
+    RESEARCH LINE: \par
+    \ResearchLine \par
+  }
+        
+  \vspace{4cm}
+  {\underline{\hspace{8cm}}\par}
+  {\bf \scshape \Student \par}
+  {Student\par}
+
+  \vspace{1cm}
+  {\underline{\hspace{8cm}}\par}
+  {\scshape \Director \par}
+  {Director\par}
+
+  \vspace{1cm}
+  {\bf \Prog \par}
+  {\Dept \par}
+  {\Institution \par}
+
+  \vspace{4cm}
+  {\today}
+
+\hspace{0pt}
+\vfill
+
+\end{titlepage}
+
+
+%%%%% white page for print out
+\shipout\null
+
+
+%%%% Abstract Page
+\newpage
+\hspace{2pt}
+\vfill
+
+  \begin{center}
+    {\Large \ProjectTitle \par}
+    \vspace{1cm}
+    {\itshape\textbf{Abstract}\par}
+  \end{center}
+  
+  \vspace{0.5cm}
+   
+En este trabajo se utilizar\'a el modelo est\'andar, en espec\'ifico, el Lagrangiano para las interacciones electrod\'ebiles que servir\'a para modelar las interacciones neutrino-electr\'on. Se analizar\'an las exitaciones electr\'onicas en materiales (detectores) inducidas por la dispersi\'on neutrino-electr\'on  as\'i como la probabilidad de transcici\'on del proceso de dispersi\'on en t\'erminos de \emph{constantes de estructura} las cuales tienen informaci\'on sobre las propiedades de la red cristalina del material del que est\'a hecho el detector adem\'as de las interacciones neutrino-n\'ucleo de las cuales estas \'utilmas son importantes para estudiar el fen\'omeno de dispersi\'on el\'astica coherente neutrino-n\'ucleo (CE$\nu$NS).
+
+  \hspace{2pt}
+\vfill
+
+%%%%Empieza el cuerpo
+\newpage
+
+\section{Antecedentes}
+
+Incluir materia oscura, cevns, e-nu y detectores pesados (CaWO4), poner Quantum ESPRESSO y su extension para materia oscura. Ademas comparar cual sera el efecto (el precio a pagar) al aumentar la coherencia, es decir, al aumentar la masa del nucleo para mejorar la coherencia se reduce el efecto Migdal. Tambien al utilizar los "neutrinos" de reacciones nucleares se tiene que cambiar el Hamiltoniano debido a que se van a tener antineutrinos como fuente, lo que cambiara el angulo de interaccion, los factores de integracion del angulo de Weinberg (g) y muy probablemente todo esto se tenga que aterrizar desde el Lagrangiano general para interacciones debiles.
+\section{Marco te\'orico}
+
+
+
+\section{Propuesta}
+
+Estudiar en sistemas de materia condensada las excitaciones electr\'onicas colectivas en el sistema y los procesos de dispersi\'on el\'astica en los n\'ucleos at\'omicos causados por neutrinos con en fin de medir su masa entre otras propiedades intr\'insecas de los neutriinos. 
+
+\section{Objetivo General}
+
+
+
+\section{Hip\'otesis}
+
+
+
+\section{Metodolog\'ia}
+
+Con las herramientas de la teor\'ia cu\'antica de campos (QFT) y los m\'etodos computacionales en qu\'imica cu\'antica, en espec\'ifico la teor\'ia del funcional de la densidad (DFT), es posible determinar el cambio/perturbaciones de la nube electr\'onica y procesos de dispersi\'on nuclear para los materiales de los cuales est\'an hechos nuestros detectores de inter\'es. Aunado a todo lo anterior los datos de experimentos de detecci\'on previos y actuales dan, como retroalimentaci\'on, una cota experimental que no se puede romper y que se debe de respetar por la teor\'ia. Las herramientas que se utilizar\'an en este proyecto para la realizaci\'on de tal modelo fenomenol\'ogico ser\'an: \emph{Quantum ESPRESSO}, $\mathbf{no\,\,se\,\,que\,\,agregar\,\,para\,\,lo\,\,de\,\,teoria}$....
+
+\section{Objetivos espec\'ificos}
+
+1.-Se tomar\'a la densidad Lagrangiana general del modelo est\'andar para las interacciones electrod\'ebiles como punto de partida.
+\\
+2.-La densidad Lagrangiana se adaptar\'a para interacciones de baja energ\'ia, obteniendo as\'i una teor\'ia efectiva.
+\\
+3.-Las contribuciones de los campos W y Z de la teor\'ia electrod\'ebil se \emph{"integrar\'an fuera"} de tal forma que sus efectos quedan presentes como acoplamientos modificados en los campos restantes, llamados \emph{acoplamientos de contacto}.
+\\
+4.-Obtenci\'on de un Hamiltoniano efectivo no-relativista, por medio de la transformaci\'on de Foldy-Wouthuysen, que act\'ua sobre los estados electr\'onicos del sistema.
+\\
+5.-An\'alisis de la estructura electr\'onica del sistema (detector) para la determinaci\'on de los factores de forma (funciones de respuesta din\'amicas) relevantes para el c\'alculo del \'angulo diferencial de interacci\'on.
+\\
+6.-El flux de neutrinos que se utilizar\'a es de neutrinos nucleares, bajo el supuesto de que el n\'umero de eventos es m\'as alto en comparaci\'on con los neutrinos solares o atmosf\'ericos.
+\\
+7.- C\'alculo de del \'angulo diferencial de interacci\'on.
+\\
+
+\section{Resultados esperados}
+
+\section{Calendario de actividades}
+acci\'on
+
+\section{Habilidades a desarrollar por el estudiante}
+
+\section{Movilidad}
+
+\end{document}
