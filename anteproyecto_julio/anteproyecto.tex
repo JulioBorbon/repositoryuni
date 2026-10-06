@@ -3,11 +3,11 @@
 \usepackage[letterpaper,margin=1.0in]{geometry}
 \usepackage{amssymb}
 \usepackage{changepage}
+\usepackage[numbers]{natbib}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{afterpage}
-\usepackage{natbib}
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -17,7 +17,7 @@
 
 
 \def\Student{Julio C\'{e}sar Borb\'{o}n Fragoso}
-\def\Title{ANTEPROYECTO}
+\def\Title{Medicion de observables de }
 \def\Prog{Doctorado en Ciencias (F\'{i}sica) }
 \def\Dept{Departamento de Investigac\'{i}on en Fis\'{i}ca}
 \def\Institution{Universidad de Sonora}
@@ -107,8 +107,9 @@ This research
 
 %%%%Empieza el cuerpo
 \newpage
-\section{Marco teorico}
+\section{Antecedentes}
 
+La materia oscura es 
 Portales oscuros: 
 
 $\mathcal{L} = - \frac{1}{2} B^{\mu \nu} F^{'}_{\mu \nu}$ Foton oscuro $A^{'}_{\nu}$ cineticamente mezclado con hipercarga.
@@ -117,7 +118,7 @@ $\mathcal{L} = (AS + \lambda S^2) H^t H$ Escalar oscuro S acoplado al Higgs.
 
 \section{Propuesta}
 
-Estudiar el sector oscuro con observables que pueden ser medidos en detectores de ondas gravitacionales o aceleradores de particulas. 
+Estudiar el sector oscuro con observables que pueden ser medidos en detectores de ondas gravitacionales o aceleradores de particulas. \cite{Griff}
 
 \section{Objetivo General}
 
@@ -134,5 +135,27 @@ Estudiar el sector oscuro con observables que pueden ser medidos en detectores d
 \section{Habilidades a desarrollar por el estudiante}
 
 \section{Mobilidad}
+
+\section
+		
+		% To use the conventional natbib style referencing
+		% Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
+		% Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
+		
+		%\bibliographystyle{acm}
+		\bibliographystyle{unsrtnat} % Use for unsorted references  
+	%	\bibliographystyle{plainnat} % use this to have URLs listed in References
+		\cleardoublepage
+		\bibliography{references} % Path to your References.bib file
+		
+		
+		% If you would like to use BibLaTeX for your references, pass `custombib' as
+		% an option in the document class. The location of 'reference.bib' should be
+		% specified in the preamble.tex file in the custombib section.
+		% Comment out the lines related to natbib above and uncomment the following line.
+		
+		%\printbibliography[heading=bibintoc, title={References}]
+		
+		
 
 \end{document}
